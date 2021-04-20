@@ -1,5 +1,6 @@
 body{
     background-color: rgb(39, 39, 39);
+    overflow-x: hidden;
 }
 
 nav{
@@ -83,14 +84,40 @@ nav a:hover{
     text-align: left;
 }
 
-#projects a{
-    font-size: 25px;
-    color: white;
-    text-decoration: none !important;
+.pr_caption a:hover ,li:hover{
+    color: rgb(196, 192, 192);
 }
 
-#projects a:hover ,li:hover{
-    color: rgb(196, 192, 192);
+#projects img{
+    cursor: pointer;
+    width:90%;
+    height: 240px;
+    opacity: 75%;
+    display: block;
+    margin-bottom: 1.5rem;
+    transition: 0.7s ease opacity;
+}
+
+#projects img:hover{
+    opacity: 100%;
+}
+
+.pr_caption{
+    width: 90%;
+    padding: 10px;    
+}
+
+.pr_caption p{
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.pr_caption a{
+    font-family:Times, serif;
+    font-size: 30px;
+    color: white;
+    text-decoration: none !important;
 }
 
 @media (max-width:1060px){
@@ -100,5 +127,34 @@ nav a:hover{
     }
     #projects{
         width: 95%;
+    }
+}
+
+@media (max-width:805px) {
+
+    hr{
+        margin: auto;
+    }
+
+    #projects{
+        text-align: center;
+    }
+
+    #projects img{
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .pr_caption{
+        border-top: 1px solid white;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .pr_caption p{
+        font-size: 18px;
     }
 }
