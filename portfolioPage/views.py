@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import owner
 
 def mainPage(request):
-    return render(request, "portfolio.html")
+    ownerInfo= owner.objects.get()
+    return render(request, "portfolio.html" ,{"owner":ownerInfo})

@@ -2,8 +2,8 @@
 {% block content %}
 <div id="header" class="row">
     <div class="col-12">
-        <img src="../static/me2.jpg" alt="">
-        <p>Mohamed Abdulhamid is a back-end Web Developer with the Power of Python and Django!</p>
+        <img src="{{owner.personalImg.url}}" alt="">
+        <p><span>{{owner.name}}</span> {{owner.caption}}</p>
     </div>
 </div>
 <div id="projects" class="">
