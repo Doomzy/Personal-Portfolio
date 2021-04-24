@@ -10,34 +10,15 @@
     <h2>Live Projects</h2>
     <hr class="w-25">
     <div class="row mt-3">
+        {% for pr in projects %}
         <div class="mt-5 col-lg-4 col-md-6 col-sm-6">
-            <img src="https://image.freepik.com/free-vector/purple-web-development-background_76964-167.jpg">
+            <img src="{{pr.prImage}}">
             <div class="pr_caption">
-                <a href="">Project 1</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="{{pr.prLink}}">{{pr.name}}</a>
+                <p>{{pr.info}}</p>
             </div>
         </div>
-        <div class="mt-5 col-lg-4 col-md-6 col-sm-6">
-            <img src="https://miro.medium.com/max/897/1*Pna-sqUiE5DW0xy_9OXYTg.png">
-            <div class="pr_caption">
-                <a href="">Project 2</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-        <div class="mt-5 col-lg-4 col-md-6 col-sm-6">
-            <img src="https://docs.microsoft.com/learn/achievements/run-web-app-background-task-with-webjobs-social.png">
-            <div class="pr_caption">
-                <a href="">Project 3</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
-        <div class="mt-5 col-lg-4 col-md-6 col-sm-6">
-            <img src="https://docs.microsoft.com/learn/achievements/run-web-app-background-task-with-webjobs-social.png">
-            <div class="pr_caption">
-                <a href="">Project 4</a>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 
