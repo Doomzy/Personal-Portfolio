@@ -21,7 +21,11 @@
         <ul class="navbar-nav ms-auto">
             <li  onclick="location.href='{{owner.linkedinLink}}'">Linkedin</li>
             <li  onclick="location.href='{{owner.gitLink}}'">Github</li>
-            <li><a href="">Blog</a></li>
+            {% if  request.path  == "/" %}
+                <li><a href="{% url 'blog:articles'%}">Blog</a></li>
+            {% elif request.path  == "/blog" %}
+                <li><a href="{% url 'portfolioPage:portfolio'%}">Portfolio</a></li>
+            {% endif %}
         </ul>
     </nav>
     {% block content %}

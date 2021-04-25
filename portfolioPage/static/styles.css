@@ -158,3 +158,34 @@ nav a:hover{
         font-size: 18px;
     }
 }
+
+#blog{
+    padding: 5rem 0rem 7rem 0rem;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#blog h1{
+    font-size: 11rem;
+}
+
+.articleTitle{
+    width: fit-content;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.articleTitle:hover{
+    color:rgb(88 88 88);
+}
+
+#articles_list{
+    margin-top: 8rem;
+    text-align: left;
+}
+
+.article{
+    margin-top: 8rem;
+    padding-bottom: 4rem;
+    border-bottom: solid rgb(88 88 88) 1px;
+}
