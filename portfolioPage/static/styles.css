@@ -159,13 +159,13 @@ nav a:hover{
     }
 }
 
-#blog{
+#blog {
     padding: 5rem 0rem 7rem 0rem;
     text-align: center;
     background-color: whitesmoke;
 }
 
-#blog h1{
+.header1{
     font-size: 11rem;
 }
 
@@ -173,10 +173,11 @@ nav a:hover{
     width: fit-content;
     font-size: 5rem;
     cursor: pointer;
+    color: #1ababa;
 }
 
 .articleTitle:hover{
-    color:rgb(88 88 88);
+    color: #18a8a8;
 }
 
 #articles_list{
@@ -187,5 +188,19 @@ nav a:hover{
 .article{
     margin-top: 8rem;
     padding-bottom: 4rem;
-    border-bottom: solid rgb(88 88 88) 1px;
+}
+
+#article{
+    padding-top: 8rem;
+    padding-bottom: 22rem;
+}
+
+#article h4{
+    margin:auto;
+    margin-top: 7rem;
+    width: 80%;
+}
+
+#article h1{
+    color: #1ababa;
 }
