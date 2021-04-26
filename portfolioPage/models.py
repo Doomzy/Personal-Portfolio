@@ -7,11 +7,14 @@ class owner(models.Model):
     linkedinLink= models.URLField()
     personalImg= models.URLField()
 
+    def __str__(self):
+        return self.name
+
 class project(models.Model):
     name= models.CharField(max_length=50)
     prLink= models.URLField()
     info= models.TextField(max_length=200)
     prImage= models.URLField()
     
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
